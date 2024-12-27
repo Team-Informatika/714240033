@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -32,4 +33,52 @@ h5 {
   font-size: 1rem;
   font-weight: 400;
   color: #1d1d1d;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #424242;
+}
+.card {
+  background: #d8d8d8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+}
+.card img {
+  border-radius: 25%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.card p {
+  margin: 5px 0;
+  color: #555;
+}
+.card a {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.card a.whatsapp {
+  background: #25d366;
+}
+.card a.instagram {
+  background: #e4405f;
+}
+.card a.github {
+  background: #333;
+}
+.card a:hover {
+  opacity: 0.9;
 }
