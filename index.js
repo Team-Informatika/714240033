@@ -1,7 +1,7 @@
 import { renderHTML, setInner } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/element.js";
 import { getJSON } from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/api.js";
 
-renderHTML('kartu', 'content/render.html');
+renderHTML('kartu', 'content/render.html' renderKartu);
 
 function renderKartu() {
   getJSON("https://t.if.co.id/json/kucingabu.json", "null", "null", responseFunction);
