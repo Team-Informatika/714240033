@@ -17,10 +17,10 @@ function responseFunction(response) {
   setInner('username', response.data.card.username);
   setInner('description', response.data.card.description);
   setInner('rate', response.data.card.rate);
-  const socialcon = document.getElementById('social')
-  let social = response.data.card.social_links;
-  social.forEach((href) => {
-    const socialcontainer = document.createElement("a")
-    socialcontainer.
-  });
+  // const socialcon = document.getElementById('social')
+  // let social = response.data.card.social_links;
+  // social.forEach((href) => {
+  //   const socialcontainer = document.createElement("a")
+  //   socialcontainer.
+  // });
 }
