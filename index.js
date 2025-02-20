@@ -17,4 +17,3 @@ function responseFunction(response) {
   setInner('username', response.data.card.username);
   setInner('description', response.data.card.description);
   setInner('rate', response.data.card.rate);
-  const social = document.getElementById()
