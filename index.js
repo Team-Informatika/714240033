@@ -47,6 +47,8 @@ function responseFunction(response) {
 
     // Menambahkan layananItem ke container
     container.appendChild(listsocial);
+    console.log(listsocial);
+    console.log(iconsocial);
   });
 
 }
