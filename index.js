@@ -25,14 +25,28 @@ function responseFunction(response) {
   setInner("username", response.data.card.username);
   setInner("description", response.data.card.description);
   setInner("rate", response.data.card.rate);
-  const socialcon = document.getElementById("social");
-  let social = response.data.card.social_links;
-  social.forEach((href) => {
-    const socialcontainer = document.createElement("a");
-    socialcontainer.textContent = href.platform;
-    socialcontainer.href = href.link;
-    socialcontainer.target = "_blank";
-    console.log(socialcontainer);
-    socialcon.appendChild(socialcontainer);
-  });
+  
+  let apaja;
+  apaja = response.data.card.social_links;
+  const container = document.getElementById("social_links");
+  // Melakukan perulangan untuk setiap item dalam data
+  apaja.forEach((social) => {
+    // Membuat elemen div untuk setiap item
+    const listsocial = document.createElement("a");
+    listsocial.href = social.link;
+    const classsocial = social.platform;
+    listsocial.classList.add(classsocial);
+
+    // Membuat elemen icon
+    const iconsocial = document.createElement("i");
+    const classicon = social.logo;
+    iconsocial.classList.add(classicon); //ini untuk menambahkan class di tag tersebut
+
+    // Menambahkan icon, judul, dan deskripsi
+    listsocial.appendChild(iconsocial);
+
+    // Menambahkan layananItem ke container
+    container.appendChild(listsocial);
+  });
+
 }
