@@ -22,4 +22,5 @@ function responseFunction(response) {
   social.forEach((href) => {
     const socialcontainer = document.createElement("a")
     socialcontainer.
-  })
+  });
+}
