@@ -39,9 +39,9 @@ function responseFunction(response) {
 
     // Membuat elemen icon
     const iconsocial = document.createElement("i");
-    const classicon = social.logo;
-    iconsocial.classList.add(classicon); //ini untuk menambahkan class di tag tersebut
-
+    const classicon = social.logo.split(" "); // Pecah berdasarkan spasi
+    classicon.forEach((cls) => iconsocial.classList.add(cls)); // Tambahkan satu per satu
+    
     // Menambahkan icon, judul, dan deskripsi
     listsocial.appendChild(iconsocial);
 
