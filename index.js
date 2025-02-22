@@ -45,7 +45,7 @@ function responseFunction(response) {
     // Menambahkan icon, judul, dan deskripsi
     listsocial.appendChild(iconsocial);
 
-    // Menambahkan layananItem ke container
+    // Menambahkan ke container
     container.appendChild(listsocial);
     console.log(listsocial);
     console.log(iconsocial);
